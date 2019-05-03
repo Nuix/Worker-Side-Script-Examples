@@ -9,7 +9,10 @@ $pdf_mime_types = {
 	"application/pdf-portfolio" => true,
 }
 
-$temp_directory = "D:\\temp\\WssPdfTemp"
+# Specifies the location that page level PDF files will be saved to.  Note that since the
+# page level PDFs generated are processed as individual items into the case, they are effectively
+# source data.  Therefore it is best to consider this directory as you would source data.
+$page_level_pdf_store = "D:\\SinglePagePdfs"
 
 # Splits a source item (which is a PDF) into a series of PDFs, 1 per
 # page in the source PDF.
@@ -58,7 +61,9 @@ def nuix_worker_item_callback(worker_item)
 	# them again, which would result in a sort of recursive looping
 	if $pdf_mime_types[mime_type] == true && (parent_mime_type.nil? || !$pdf_mime_types[parent_mime_type])
 		puts "Splitting PDF: #{guid}"
-		export_directory = File.join($temp_directory,guid)
+		subdir_a = guid[0..2]
+		subdir_b = guid[3..5]
+		export_directory = File.join($page_level_pdf_store,subdir_a,subdir_b)
 		java.io.File.new(export_directory).mkdirs
 		generated_files = split_pdf_source_item(source_item,export_directory)
 		worker_item.setChildren(generated_files)
@@ -67,6 +72,4 @@ end
 
 # Define our closing callback
 def nuix_worker_item_callback_close
-	# Delete any temporary PDFs we created
-	org.apache.commons.io.FileUtils.deleteDirectory(java.io.File.new($temp_directory))
 end
