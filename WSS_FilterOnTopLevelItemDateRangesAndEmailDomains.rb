@@ -9,6 +9,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Visit GitHub for more examples: https://github.com/Nuix/Worker-Side-Script-Examples
+
 # This worker side script filters items based on:
 # 1. Is a given top level item within one of the specified date ranges?
 # 2. If the given top level item is an email, does it have at least one

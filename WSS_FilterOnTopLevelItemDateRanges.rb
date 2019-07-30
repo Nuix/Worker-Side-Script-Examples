@@ -9,6 +9,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Visit GitHub for more examples: https://github.com/Nuix/Worker-Side-Script-Examples
+
 # This worker side script filters processed items based on whether they are within
 # one or more define date ranges.  When an item is top level, it is checked to see
 # if it is within one of the define date ranges.  If it is not, the item is not processed.

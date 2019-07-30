@@ -9,6 +9,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Visit GitHub for more examples: https://github.com/Nuix/Worker-Side-Script-Examples
+
 # Provide a list of ancestor mime types for which
 # descendants of those ancestor type will have their binary stored, all other
 # items will not have their binary stored!  Note an entry in

@@ -9,6 +9,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Visit GitHub for more examples: https://github.com/Nuix/Worker-Side-Script-Examples
+
 $min_year = 2001
 $max_year = 2001
 

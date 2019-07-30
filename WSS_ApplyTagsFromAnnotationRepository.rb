@@ -9,6 +9,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Visit GitHub for more examples: https://github.com/Nuix/Worker-Side-Script-Examples
+
 # This WSS will tag items which have an MD5 present in an annotation DB file previously generated
 # and populated with tags using the script "Annotation Export/Import":
 # https://github.com/Nuix/Annotation-Export-Import

@@ -9,6 +9,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Visit GitHub for more examples: https://github.com/Nuix/Worker-Side-Script-Examples
+
 java_import java.io.FileOutputStream
 java_import com.itextpdf.text.Document
 java_import com.itextpdf.text.pdf.PdfCopy

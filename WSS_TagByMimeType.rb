@@ -9,6 +9,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Visit GitHub for more examples: https://github.com/Nuix/Worker-Side-Script-Examples
+
 # Hash of mime types and the tag to apply to each
 $mime_type_tags = {
 	"message/rfc822" => "RFC822 Email",

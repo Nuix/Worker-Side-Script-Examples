@@ -9,6 +9,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Visit GitHub for more examples: https://github.com/Nuix/Worker-Side-Script-Examples
+
 # If an item's name contains an extension we don't want to process
 # we will tell the worker not to process that item.  Note since we are using
 # the item's name, this only really effectively filters data for which the item's
