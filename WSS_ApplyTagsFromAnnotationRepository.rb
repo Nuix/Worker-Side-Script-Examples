@@ -1,28 +1,32 @@
-# Copyright 2019 Nuix
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#     http://www.apache.org/licenses/LICENSE-2.0
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+=begin
 
-# Visit GitHub for more examples: https://github.com/Nuix/Worker-Side-Script-Examples
+Copyright 2019 Nuix
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 
-# This WSS will tag items which have an MD5 present in an annotation DB file previously generated
-# and populated with tags using the script "Annotation Export/Import":
-# https://github.com/Nuix/Annotation-Export-Import
-#
-# *** IMPORTANT ***
-# This Worker Side Script (WSS) requires the file SuperUtilities.jar to be accessible to the workers.
-# Without this file, the class providing access to the annotation DB will not be accessible
-# to the workers and processing will error on every item.  You can obtain a copy of this JAR file here:
-# https://github.com/Nuix/SuperUtilities/releases
-# Once you have a copy of this file, either copy it into the "lib" sub-directory of you Nuix install, for
-# example: C:\Program Files\Nuix\Nuix 7.8\lib
-# Or make sure you provide a valid full file path to the JAR file in the global variable $superutilities_jar_path
+Visit GitHub for more examples: https://github.com/Nuix/Worker-Side-Script-Examples
+
+This WSS will tag items which have an MD5 present in an annotation DB file previously generated
+and populated with tags using the script "Annotation Export/Import":
+https://github.com/Nuix/Annotation-Export-Import
+
+*** IMPORTANT ***
+This Worker Side Script (WSS) requires the file SuperUtilities.jar to be accessible to the workers.
+Without this file, the class providing access to the annotation DB will not be accessible
+to the workers and processing will error on every item.  You can obtain a copy of this JAR file here:
+https://github.com/Nuix/SuperUtilities/releases
+Once you have a copy of this file, either copy it into the "lib" sub-directory of you Nuix install, for
+example: C:\Program Files\Nuix\Nuix 7.8\lib
+Or make sure you provide a valid full file path to the JAR file in the global variable $superutilities_jar_path
+
+=end
 
 # Specify where the AnnotationRepository SQLite DB file is on the file system
 $annotations_db_file = "D:\\Temp\\Annotations.db"
