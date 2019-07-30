@@ -1,7 +1,9 @@
 Worker Side Script Examples
 ===========================
 
-# What is a Worker Side Script?
+This repository contains some example Worker Side Scripts (WSS) for use with Nuix to customize loading data.
+
+## What is a Worker Side Script?
 
 When processing data in Nuix, you can provide a Worker Side Script (WSS) to customize some aspects of how that data is processed.  A very simplified workflow for a given worker could be imagined to be:
 
@@ -22,7 +24,7 @@ A WSS does this by providing 1 or more callbacks:
 - `nuixWorkerItemCallbackInit` - Called once before processing begins, allowing your code to perform any initialization you may need to perform.
 - `nuixWorkerItemCallbackClose` - Called once after processing has completed, allowing your code to perform any cleanup you may need to perform.
 
-# Basic Examples
+## Basic Examples
 
 In Ruby a barebones example might look like the following:
 
@@ -68,9 +70,9 @@ def nuixWorkerItemCallbackClose
 end
 ```
 
-# Using a Worker Side Script
+## Using a Worker Side Script
 
-## As a Script via the GUI
+### As a Script via the GUI
 
 The processing settings dialog has a tab labelled **Worker Script** which allows you to past a worker side script to be used during processing.
 
@@ -78,7 +80,7 @@ The processing settings dialog has a tab labelled **Worker Script** which allows
 
 **Note:** Make sure the correct language is checked!
 
-## As a Script via the API
+### As a Script via the API
 
 A script may provide a worker side script by passing the **code** of the script as a string setting while calling [Processor.setProcessingSettings].  This can be done inline in the same file like so using a Ruby [heredoc](http://ruby-doc.org/core-2.2.0/doc/syntax/literals_rdoc.html#label-Here+Documents):
 
@@ -122,7 +124,7 @@ processing_settings = {
 processor.setProcessingSettings(processing_settings)
 ```
 
-## As a Java class via the API
+### As a Java class via the API
 
 It is also possible to use a Java class as a worker side "script".  The first step is to create a Java class which implements [Consumer&lt;WorkerItem&gt;](https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html) and [AutoCloseable](https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html).
 
