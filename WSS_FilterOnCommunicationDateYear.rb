@@ -13,6 +13,10 @@ limitations under the License.
 
 Visit GitHub for more examples: https://github.com/Nuix/Worker-Side-Script-Examples
 
+This WSS demonstrates filtering items based on whether the year portion of a given item's
+communication date falls within a specified range.  Items without a Communication object
+pass through as normal.
+
 =end
 
 $min_year = 2001

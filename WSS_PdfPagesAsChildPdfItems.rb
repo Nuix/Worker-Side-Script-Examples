@@ -13,6 +13,10 @@ limitations under the License.
 
 Visit GitHub for more examples: https://github.com/Nuix/Worker-Side-Script-Examples
 
+This WSS demonstrates detecting a PDF item being processed, breaking that PDF into a series of
+single page PDF files and then adding those single page PDF files as children to the originating
+PDF.
+
 =end
 
 java_import java.io.FileOutputStream

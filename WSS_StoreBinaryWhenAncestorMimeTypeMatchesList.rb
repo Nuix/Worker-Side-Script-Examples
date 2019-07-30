@@ -13,6 +13,9 @@ limitations under the License.
 
 Visit GitHub for more examples: https://github.com/Nuix/Worker-Side-Script-Examples
 
+This WSS demonstrates selectively storing item binaries based on whether they have an
+ancestor items which has a mime type specified in a list of mime types.
+
 =end
 
 # Provide a list of ancestor mime types for which

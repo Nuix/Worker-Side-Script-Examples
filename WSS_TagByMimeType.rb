@@ -13,6 +13,9 @@ limitations under the License.
 
 Visit GitHub for more examples: https://github.com/Nuix/Worker-Side-Script-Examples
 
+This WSS demonstrates tagging items based on their mime type.  The mime types and associated tags assigned
+to them is determined by listing each mime type and associated tag in the Hash $mime_type_tags.
+
 =end
 
 # Hash of mime types and the tag to apply to each

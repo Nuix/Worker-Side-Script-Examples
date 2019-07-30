@@ -13,6 +13,16 @@ limitations under the License.
 
 Visit GitHub for more examples: https://github.com/Nuix/Worker-Side-Script-Examples
 
+This WSS demonstrates customizing the Communication object of an item being processed.  This
+script defines 2 classes:
+
+- SimpleAddress: A Ruby class implementing the Nuix interface Address (https://download.nuix.com/releases/desktop/stable/docs/en/scripting/api/nuix/Address.html)
+- SimpleCommunication: A Ruby class implementing the Nuix interface Communication (https://download.nuix.com/releases/desktop/stable/docs/en/scripting/api/nuix/Communication.html)
+
+We use these 2 classes to then build a customized communication object and ultimately provide that back to Nuix
+using the method WorkerItem.setItemCommunication which will replace any communication originally present
+on the item with the one we created.
+
 =end
 
 java_import 'nuix.Address'
