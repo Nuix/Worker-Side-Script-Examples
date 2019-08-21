@@ -82,7 +82,7 @@ The processing settings dialog has a tab labelled **Worker Script** which allows
 
 ### As a Script via the API
 
-A script may provide a worker side script by passing the **code** of the script as a string setting while calling [Processor.setProcessingSettings].  This can be done inline in the same file like so using a Ruby [heredoc](http://ruby-doc.org/core-2.2.0/doc/syntax/literals_rdoc.html#label-Here+Documents):
+A script may provide a worker side script by passing the **code** of the script as a string setting while calling [Processor.setProcessingSettings](https://download.nuix.com/releases/desktop/stable/docs/en/scripting/api/nuix/Processor.html#setProcessingSettings-java.util.Map-).  This can be done inline in the same file like so using a Ruby [heredoc](http://ruby-doc.org/core-2.2.0/doc/syntax/literals_rdoc.html#label-Here+Documents):
 
 ```ruby
 # Define the WSS ruby source as a multi line string inline to the main Ruby script
